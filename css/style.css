@@ -1,0 +1,217 @@
+@import url(/Users/TravsMac/Sites/Boterham/node_modules/normalize.css/normalize.css);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 40px auto 40px auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 999;
+}
+
+nav img {
+  width: 40px;
+}
+
+.logo img {
+  width: 200px;
+  display: inline-block;
+}
+
+.logo h1 {
+  display: inline-block;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 200px;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-base {
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s ease, -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease, -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.front {
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.back p {
+  bottom: 30px;
+  position: absolute;
+  right: 30px;
+  left: initial;
+  text-align: right;
+}
+
+.front:hover {
+  -webkit-box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.front:hover .back {
+  opacity: 1;
+}
+
+.about a {
+  color: lightpink;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: #dedede;
+  padding-top: 50px;
+  font-size: 14px;
+}
+
+footer a {
+  color: lightpink;
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFDDC0;
+  z-index: 20;
+}
+
+.modal-close {
+  font-family: sans-serif;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px 25px 20px 25px;
+  z-index: 30;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.modal-content {
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 30;
+  max-width: 400px;
+  background: transparent;
+  text-align: center;
+  color: #FFA37E;
+}
+
+/* Colors */
+.front-1 {
+  background-color: red;
+  color: pink;
+}
+
+.front-1 .back {
+  color: red;
+  background-color: pink;
+}
+
+.front-2 {
+  background-color: orange;
+  color: lightblue;
+}
+
+.front-2 .back {
+  color: orange;
+  background-color: lightblue;
+}
+
+.front-3 {
+  background-color: #2C6127;
+  color: #D4E3D3;
+}
+
+.front-3 .back {
+  color: #2C6127;
+  background-color: #D4E3D3;
+}
+/*# sourceMappingURL=style.css.map */

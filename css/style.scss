@@ -4,6 +4,35 @@
 // Colours:
 
 $grey: #444;
+$dark-salmon: #cb6b52;
+$light-salmon: #e8aea2;
+$silver: #cedadd;
+$cobalt: #1d3774;
+$dusty-pink: #dac3b6;
+$dusty-white: #faf9f7;
+$light-sage: #cfe8d3;
+$dark-sage: #528065;
+$steel: #7f868e;
+$peach: #fda287;
+$salmon: #f57e6c;
+$butterscotch: #ffbf40;
+$pink-rust: #e3afa9;
+$rust: #c6701f;
+$mango: #fab62d;
+$light-pink: #ffeae7;
+$violet: #d5cdf1;
+$dark-violet: #60548c;
+$military-green: #6b784a;
+$light-maize: #fdfdeb;
+$maize: #fad543;
+$dusty-blue: #505b79;
+$dusty-orange: #cc9c3f;
+$light-maroon: #8b3946;
+$duckegg: #d8f9f8;
+$sea: #36968d;
+$earth: #9b6e3f;
+$light-blue: #91bbd9;
+$dark-blue: #1a3c6c;
 
 
 body {
@@ -43,14 +72,14 @@ body {
 
 
   nav img {
-  width: 40px;
+  width: 50px;
   }
   
 
   .logo {
 
     img {
-      width: 200px;
+      width: 250px;
       display:inline-block;
     }
     h1 {
@@ -172,35 +201,146 @@ body {
     color: #FFA37E;
   }
   
-  
-  
+
   
   
   /* Colors */
   
   .front-1 {
-    background-color: red;
-    color: pink;
+    background-color: $dark-salmon;
+    color: $light-salmon;
     .back {
-      color: red;
-      background-color: pink;
+      color: $dark-salmon;
+      background-color: $light-salmon;
     }
   }
 
   .front-2 {
-    background-color: orange;
-    color: lightblue;
+    background-color: $silver;
+    color: $cobalt;
     .back {
-      color: orange;
-      background-color: lightblue;
+      color: $silver;
+      background-color: $cobalt;
     }
   }
 
   .front-3 {
-    background-color: #2C6127;
-    color: #D4E3D3;
+    background-color: $dusty-pink;
+    color: $dusty-white;
     .back {
-      color: #2C6127;
-      background-color: #D4E3D3;
+      color: $dusty-pink;
+      background-color: $dusty-white;
+    }
+  }
+
+
+  .front-4 {
+    background-color: $light-sage;
+    color: $dark-sage;
+    .back {
+      color: $light-sage;
+      background-color: $dark-sage;
+    }
+  }
+
+  .front-5 {
+    background-color: $steel;
+    color: $peach;
+    .back {
+      color: $steel;
+      background-color: $peach;
+    }
+  }
+
+  .front-6 {
+    background-color: $mango;
+    color: $light-pink;
+    .back {
+      color: $mango;
+      background-color: $light-pink;
+    }
+  }
+
+  .front-7 {
+    background-color: $salmon;
+    color: $butterscotch;
+    .back {
+      color: $salmon;
+      background-color: $butterscotch;
+    }
+  }
+
+  .front-8 {
+    background-color: $violet;
+    color: $dark-violet;
+    .back {
+      color: $violet;
+      background-color: $dark-violet;
+    }
+  }
+  .front-9 {
+    background-color: $pink-rust;
+    color: $rust;
+    .back {
+      color: $pink-rust;
+      background-color: $rust;
+    }
+  }
+  .front-10 {
+    background-color: $military-green;
+    color: $light-salmon;
+    .back {
+      color: $military-green;
+      background-color: $light-salmon;
+    }
+  }
+  .front-11 {
+    background-color: $light-maize;
+    color: $maize;
+    .back {
+      color: $light-maize;
+      background-color: $maize;
+    }
+  }
+  .front-12 {
+    background-color: $dusty-blue;
+    color: $dusty-orange;
+    .back {
+      color: $dusty-blue;
+      background-color: $dusty-orange;
+    }
+  }
+  .front-13 {
+    background-color: $duckegg;
+    color: $sea;
+    .back {
+      color: $duckegg;
+      background-color: $sea;
+    }
+  }
+  .front-14 {
+    background-color: $light-maroon;
+    color: $dusty-pink;
+    .back {
+      color: $light-maroon;
+      background-color: $dusty-pink;
+    }
+  }
+
+
+  .front-15 {
+    background-color: $light-pink;
+    color: $earth;
+    .back {
+      color: $light-pink;
+      background-color: $earth;
+    }
+  }
+  .front-16 {
+    background-color: $light-blue;
+    color: $dark-blue;
+    .back {
+      color: $light-blue;
+      background-color: $dark-blue;
     }
   }

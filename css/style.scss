@@ -1,8 +1,8 @@
-
 @import "../node_modules/normalize.css/normalize.css";
 
 // Colours:
 
+<<<<<<< HEAD
 // $grey: #444;
 // $dark-salmon: #cb6b52;
 // $light-salmon: #e8aea2;
@@ -37,6 +37,9 @@
 
 $light-sea: #d8f9f8;
 $sea: #36968d;
+=======
+$blackish: #444;
+>>>>>>> origin/master
 $dark-salmon: #cb6b52;
 $pink-beige: #dac3b6;
 $light-beige: #faf9f7;
@@ -85,122 +88,115 @@ $pink-dust: #e3afa9;
 $dust-pink: #c6701f;
 
 
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: #ffffff;
-    color: #333333;
-    margin: 40px auto 40px auto;
-  }
-
- 
-  h1 {
-    font-size: 40px;
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 22px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  header {
-    box-sizing: border-box;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    left:0;
-    width: 100%;
-    padding: 20px;
-    z-index: 999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: $blackish;
+  margin: 40px auto 40px auto;
 }
 
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
 
-  nav img {
+h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 999;
+}
+
+nav img {
   width: 50px;
-  }
-  
+}
 
-  .logo {
+.logo {
+  img {
+    width: 250px;
+    display: inline-block;
+  }
+  h1 {
+    display: inline-block;
+  }
+}
 
-    img {
-      width: 250px;
-      display:inline-block;
-    }
-    h1 {
-      display:inline-block;
-    }
-  }
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 200px;
+}
 
-  
-  .intro {
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 200px;
-  }
-  
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
 
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content:space-evenly;
-  }
-  
-  .card-base {
-    width: 200px;
-    height: 250px;
-    padding: 20px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.20), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
-    transform: translateY(0px);
-  }
+.card-base {
+  width: 200px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.2),
+    0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+  transform: translateY(0px);
+}
 
-  .front {
-    position: relative;
-    margin: 15px;
-    cursor: pointer;
-  }
-  
-  .back {
+.front {
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  p {
+    bottom: 30px;
     position: absolute;
-    top:0;
-    left:0;
-    opacity: 0;
-    z-index: 2;
-    p {
-      bottom: 30px;
-      position: absolute;
-      right: 30px;
-      left: initial;
-      text-align: right; 
-    }
+    right: 30px;
+    left: initial;
+    text-align: right;
   }
+}
 
-  .front:hover {
-    box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.20), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
-    transform: translateY(-5px);
-  }
-  
-  .front:hover .back {
-    opacity: 1;
-  }
+.front:hover {
+  box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.2),
+    0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+  transform: translateY(-5px);
+}
 
-  .about a {
-    color: lightpink;
-    text-decoration: none;
-  }
+.front:hover .back {
+  opacity: 1;
+}
 
+<<<<<<< HEAD
   footer {
     text-align: center;
     color: #dedede;
@@ -275,8 +271,76 @@ body {
       color:   $dark-salmon;
       background-color: $salmon-green;
     }
-  }
+=======
+.about a {
+  color: lightpink;
+  text-decoration: none;
+}
 
+footer {
+  text-align: center;
+  color: $blackish;
+  padding-top: 50px;
+  font-size: 14px;
+}
+
+footer a {
+  color: lightpink;
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffddc0;
+  z-index: 20;
+}
+
+.modal-close {
+  font-family: sans-serif;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px 25px 20px 25px;
+  z-index: 30;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.modal-content {
+  padding: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  max-width: 400px;
+  background: transparent;
+  text-align: center;
+  color: #ffa37e;
+}
+
+/* Colors */
+
+.front-1 {
+  background-color: $dark-salmon;
+  color: $light-salmon;
+  .back {
+    color: $dark-salmon;
+    background-color: $light-salmon;
+>>>>>>> origin/master
+  }
+}
+
+<<<<<<< HEAD
   .front-3 {
     background-color:$pink-beige;
     color: $light-beige;
@@ -284,18 +348,36 @@ body {
       color:$pink-beige;
       background-color: $light-beige;
     }
+=======
+.front-2 {
+  background-color: $silver;
+  color: $cobalt;
+  .back {
+    color: $silver;
+    background-color: $cobalt;
+>>>>>>> origin/master
   }
+}
 
-
-  .front-4 {
-    background-color: $light-sage;
-    color: $dark-sage;
-    .back {
-      color: $light-sage;
-      background-color: $dark-sage;
-    }
+.front-3 {
+  background-color: $dusty-pink;
+  color: $dusty-white;
+  .back {
+    color: $dusty-pink;
+    background-color: $dusty-white;
   }
+}
 
+.front-4 {
+  background-color: $light-sage;
+  color: $dark-sage;
+  .back {
+    color: $light-sage;
+    background-color: $dark-sage;
+  }
+}
+
+<<<<<<< HEAD
   .front-5 {
     background-color: $marigold-salmon;
     color: $salmon-marigold;
@@ -303,8 +385,18 @@ body {
       color: $marigold-salmon;
       background-color: $salmon-marigold;
     }
+=======
+.front-5 {
+  background-color: $steel;
+  color: $peach;
+  .back {
+    color: $steel;
+    background-color: $peach;
+>>>>>>> origin/master
   }
+}
 
+<<<<<<< HEAD
   .front-6 {
     background-color: $kahki-sand;
     color: $sand-sky-kahki;
@@ -312,8 +404,18 @@ body {
       color: $kahki-sand;
       background-color: $sand-sky-kahki;
     }
+=======
+.front-6 {
+  background-color: $mango;
+  color: $light-pink;
+  .back {
+    color: $mango;
+    background-color: $light-pink;
+>>>>>>> origin/master
   }
+}
 
+<<<<<<< HEAD
   .front-7 {
     background-color: $sky-sand-grey;
     color: $sand-sky-kahki;
@@ -321,8 +423,18 @@ body {
       color: $sky-sand-grey;
       background-color: $sand-sky-kahki;
     }
+=======
+.front-7 {
+  background-color: $salmon;
+  color: $butterscotch;
+  .back {
+    color: $salmon;
+    background-color: $butterscotch;
+>>>>>>> origin/master
   }
+}
 
+<<<<<<< HEAD
   .front-8 {
     background-color: $blush;
     color: $dark;
@@ -378,8 +490,66 @@ body {
       color: $rouge-rose;
       background-color: $rose-rouge;
     }
+=======
+.front-8 {
+  background-color: $violet;
+  color: $dark-violet;
+  .back {
+    color: $violet;
+    background-color: $dark-violet;
   }
+}
+.front-9 {
+  background-color: $pink-rust;
+  color: $rust;
+  .back {
+    color: $pink-rust;
+    background-color: $rust;
+  }
+}
+.front-10 {
+  background-color: $military-green;
+  color: $light-salmon;
+  .back {
+    color: $military-green;
+    background-color: $light-salmon;
+  }
+}
+.front-11 {
+  background-color: $light-maize;
+  color: $maize;
+  .back {
+    color: $light-maize;
+    background-color: $maize;
+  }
+}
+.front-12 {
+  background-color: $dusty-blue;
+  color: $dusty-orange;
+  .back {
+    color: $dusty-blue;
+    background-color: $dusty-orange;
+  }
+}
+.front-13 {
+  background-color: $duckegg;
+  color: $sea;
+  .back {
+    color: $duckegg;
+    background-color: $sea;
+  }
+}
+.front-14 {
+  background-color: $light-maroon;
+  color: $dusty-pink;
+  .back {
+    color: $light-maroon;
+    background-color: $dusty-pink;
+>>>>>>> origin/master
+  }
+}
 
+<<<<<<< HEAD
 
   .front-15 {
     background-color:$pink-steel;
@@ -493,3 +663,21 @@ body {
       background-color: $ice-marigold;
     }
   }
+=======
+.front-15 {
+  background-color: $light-pink;
+  color: $earth;
+  .back {
+    color: $light-pink;
+    background-color: $earth;
+  }
+}
+.front-16 {
+  background-color: $light-blue;
+  color: $dark-blue;
+  .back {
+    color: $light-blue;
+    background-color: $dark-blue;
+  }
+}
+>>>>>>> origin/master
